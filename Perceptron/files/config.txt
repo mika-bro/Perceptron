@@ -1,0 +1,3 @@
+HiddenLayerNeurons:2
+Step:0,5
+Epochs:500
