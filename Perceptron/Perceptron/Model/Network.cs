@@ -44,6 +44,19 @@ namespace Perceptron.Model
             }
         }
 
+        public Dictionary<string, int> GetNeuronsNb()
+        {
+            int inputLayer = InputLayer.Neurons.Count();
+            int hiddenLayer = HiddenLayer.Neurons.Count();
+            int outputLayer = OutputLayer.Neurons.Count();
+            return new Dictionary<string, int>
+            {
+                { "InputLayer", inputLayer},
+                { "HiddenLayer", hiddenLayer},
+                {"OutputLayer", outputLayer }
+            };
+        }
+
         private void CountOutputValues(List<int> single_pattern)
         {
             int n = 0;
