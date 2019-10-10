@@ -25,6 +25,11 @@ namespace Perceptron.Model
             Dendrites = dendrites;
         }
 
+        public int CountDendrites()
+        {
+            return Dendrites.Count();
+        }
+
         public void CountValue(Layer layer)
         {
             if(Bias == false)
